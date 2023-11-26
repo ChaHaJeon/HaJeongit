@@ -54,8 +54,9 @@
             width: var(--side-bar-width);
             min-height: var(--side-bar-height);
             /* 사이드바의 높이를 전체 화면 높이의 90%로 지정 */
-            margin-top: calc((100vh - var(--side-bar-height)) / 2);
+            margin-top: -720px;
             /* 사이드바 위와 아래의 마진을 동일하게 지정 */
+            z-index: 65684686841;
         }
 
         /* 아이콘 시작 */
@@ -193,6 +194,32 @@
             background-color: black;
             width: var(--up-bar-width);
             min-height: var(--up-bar-height);
+
+        }
+
+        .text1 {
+            color : white;
+            text-align: center;
+            margin-top: 12px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .text2 {
+            color: white;
+            text-align: right;
+            margin-top: -20px;
+            margin-right: 10px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .main > img{
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 830px;
+            filter: brightness(50%)
         }
 
     </style>
@@ -200,9 +227,15 @@
 
 <body>
     <div class="up-bar">
-        <!-- <div class="text1">
-            <h1>K동 헬스장</h1>
-        </div> -->
+        <div class="text1">
+            <a href="mainpage.html">K동 헬스장</a>
+        </div>
+        <div class="text2">
+            로그인&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;회원가입
+        </div>
+    </div>
+    <div class="main">
+        <img src="images/bonobono.webp">
     </div>
     <aside class="side-bar">
         <section class="side-bar__icon-box">
